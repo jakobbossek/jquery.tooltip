@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script src="../javascript/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.tooltip-1.0.js" type="text/javascript" charset="utf-8"></script>
+
+	<title>jQuery tooltips</title>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a[title], div")
+				.tooltip({fadeInTime: 400, sticky: false});
+		});
+	</script>
+	<style type="text/css">
+		#tooltip {
+			display: block;
+			background: rgba(0,0,0,0.8);
+			font: 10px/12px Arial, sans-serif;
+			color: #646464;
+			text-align: center;
+			border: 2px solid #000;
+			border-radius: 5px;
+			padding: 6px;
+		}
+		
+		#tooltipInner {
+			position: absolute;
+			top: 50%;
+			margin-top: -5px;
+			left: -10px;
+			width: 10px;
+			height: 10px;
+			background: #000;
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li><a href="#" title="Tooltip text goes here">Link mit title</a></li>
+		<li><a href="#" title="Another tooltip">Ein weiterer Link mit title</a></li>
+	</ul>
+	
+	<div title="Auch ich div hab nen tooltip">
+		<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+		<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.</p>
+	</div>
+</body>
+</html>
