@@ -17,5 +17,5 @@ of the elements.
     });
 ```
 
-There are a few options which can be provided to the plugin. For example setting ```sticky``` to ````true``` results in
+There are a few options which can be provided to the plugin. For example setting ```sticky``` to ```true``` results in
 sticky tooltips, which will not follow the mouse movement. Take a look at the defaults in the plugin for more options.
