@@ -1,3 +1,12 @@
+/* 
+ * jQuery plugin tooltip
+ *  
+ * @author: Jakob Bossek (http://www.jakobbossek.de/)
+ * @version: 1.0
+ *
+ * Replaces the boring beige/yellow tooltips offered by the operating system
+ * with nice JS tooltips.
+ */
 ;(function($) {
 	jQuery.fn.tooltip = function(arg) {
 		var options = $.extend(
@@ -5,7 +14,6 @@
 			$.fn.tooltip.defaults,
 			arg
 		);
-		
 		
 		return this.each(function() {
 			// save title and remove from element
@@ -44,15 +52,16 @@
 		});
 	};
 	
-	$.fn.tooltip.defaults ={
-		sticky: false, // if sticky tooltip appears and does not move with the pointer
-		offsetToPointer: 15, // offset of the tooltip window to the mouse pointer
-		fadeInTime: 1000, // time in milliseconds for fade in
-		fadeOutTime: 250, // time in milliseconds for fade out
-		appendHTML: '<span id="tooltipInner"></span>' // some html stuff to append to the tooltip window
+	$.fn.tooltip.defaults = {
+    // if sticky tooltip appears and does not move with the pointer
+		sticky: false,
+    // offset of the tooltip window to the mouse pointer
+		offsetToPointer: 15,
+    // time in milliseconds for fade in
+		fadeInTime: 1000,
+    // time in milliseconds for fade out
+		fadeOutTime: 250,
+    // some html stuff to append to the tooltip window
+		appendHTML: '<span id="tooltipInner"></span>'
 	};
 })(jQuery);
-
-
-
-
